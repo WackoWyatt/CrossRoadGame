@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MdI-6y-aSf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TDB-MC-RIX">
+            <objects>
+                <navigationController id="MdI-6y-aSf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x25-oj-g1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XuO-iL-U5r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnW-kO-jOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="77"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrossRoadGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0F-1T-3Mz">
+                                <rect key="frame" x="47" y="505" width="74" height="34"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="EmS-Xd-wEo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-j3-RPj">
+                                <rect key="frame" x="129" y="505" width="198" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to safely cross the roads. " textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-Dv-Onx">
+                                <rect key="frame" x="16" y="161" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="isQ-71-4J1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More roads will appear as you continue." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-JT-jMF">
+                                <rect key="frame" x="16" y="189" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4NO-Yu-cQA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every time you step you get +10 points. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8H-S0-CSH">
+                                <rect key="frame" x="16" y="217" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="TEn-7p-Koi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to get on the high score leaderboard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MI-8E-OOA">
+                                <rect key="frame" x="16" y="273" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="zFU-Jg-GSO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Each level beat will award more points." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-M6-muT">
+                                <rect key="frame" x="16" y="245" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="TZe-TL-Ggu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Auburn CrossRoad Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBZ-aZ-WRF">
+                                <rect key="frame" x="16" y="65" width="343" height="51"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGm-3k-qp2">
+                                <rect key="frame" x="126" y="379" width="123" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="heE-MZ-OJH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOH-B9-DZy"/>
+                                    <segue destination="nJY-zr-JI9" kind="show" id="SLJ-Lx-EB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujq-Lp-ptM">
+                                <rect key="frame" x="126" y="427" width="123" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h2p-8L-C6P"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="High Scores"/>
+                                <connections>
+                                    <action selector="highScoresButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vg0-fL-9Dj"/>
+                                    <segue destination="Dwi-Vi-Dn1" kind="show" id="vuW-qd-uSC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="9MI-8E-OOA" firstAttribute="centerX" secondItem="EGm-3k-qp2" secondAttribute="centerX" id="1ga-yM-LYQ"/>
+                            <constraint firstItem="Fvh-j3-RPj" firstAttribute="top" secondItem="ujq-Lp-ptM" secondAttribute="bottom" constant="38" id="3fh-be-mIv"/>
+                            <constraint firstItem="n8H-S0-CSH" firstAttribute="leading" secondItem="IHK-M6-muT" secondAttribute="leading" id="76j-mT-7pP"/>
+                            <constraint firstItem="n8H-S0-CSH" firstAttribute="top" secondItem="Ga6-JT-jMF" secondAttribute="bottom" constant="8" id="8NX-zh-UpA"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="trailing" secondItem="y6A-Dv-Onx" secondAttribute="trailing" id="9FW-4z-sgu"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="top" secondItem="9MI-8E-OOA" secondAttribute="bottom" constant="86" id="Aam-aa-TBc"/>
+                            <constraint firstItem="Ga6-JT-jMF" firstAttribute="trailing" secondItem="n8H-S0-CSH" secondAttribute="trailing" id="D1g-EY-oql"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="leading" secondItem="ujq-Lp-ptM" secondAttribute="leading" id="GV9-YJ-ups"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y0F-1T-3Mz" secondAttribute="bottom" constant="128" id="JSt-gO-9Fz"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="M0Y-Zu-Bb2"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MZ0-sv-UbU"/>
+                            <constraint firstItem="IHK-M6-muT" firstAttribute="top" secondItem="n8H-S0-CSH" secondAttribute="bottom" constant="8" id="Maw-k6-LT7"/>
+                            <constraint firstItem="y6A-Dv-Onx" firstAttribute="top" secondItem="JBZ-aZ-WRF" secondAttribute="bottom" constant="45" id="N3U-ff-nr0"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="leading" secondItem="y6A-Dv-Onx" secondAttribute="leading" id="NmK-W8-xpV"/>
+                            <constraint firstItem="Fvh-j3-RPj" firstAttribute="leading" secondItem="y0F-1T-3Mz" secondAttribute="trailing" constant="8" id="Nr9-Xy-zS5"/>
+                            <constraint firstItem="y6A-Dv-Onx" firstAttribute="leading" secondItem="Ga6-JT-jMF" secondAttribute="leading" id="SuX-ru-zAJ"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="trailing" secondItem="ujq-Lp-ptM" secondAttribute="trailing" id="VfD-w9-Ul3"/>
+                            <constraint firstItem="y0F-1T-3Mz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Xom-YI-xso"/>
+                            <constraint firstItem="y0F-1T-3Mz" firstAttribute="top" secondItem="Fvh-j3-RPj" secondAttribute="top" id="aiS-p0-tkX"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aoQ-4f-LsM"/>
+                            <constraint firstItem="Ga6-JT-jMF" firstAttribute="leading" secondItem="n8H-S0-CSH" secondAttribute="leading" id="bbC-oR-VPP"/>
+                            <constraint firstItem="IHK-M6-muT" firstAttribute="trailing" secondItem="9MI-8E-OOA" secondAttribute="trailing" id="fj4-IK-GLl"/>
+                            <constraint firstItem="ujq-Lp-ptM" firstAttribute="top" secondItem="EGm-3k-qp2" secondAttribute="bottom" constant="8" id="hfc-oY-p70"/>
+                            <constraint firstItem="y0F-1T-3Mz" firstAttribute="bottom" secondItem="Fvh-j3-RPj" secondAttribute="bottom" id="ior-PO-WVe"/>
+                            <constraint firstItem="y6A-Dv-Onx" firstAttribute="trailing" secondItem="Ga6-JT-jMF" secondAttribute="trailing" id="jmo-g9-ewG"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="oal-q8-vDL"/>
+                            <constraint firstItem="n8H-S0-CSH" firstAttribute="trailing" secondItem="IHK-M6-muT" secondAttribute="trailing" id="p0g-JN-JWf"/>
+                            <constraint firstItem="9MI-8E-OOA" firstAttribute="top" secondItem="IHK-M6-muT" secondAttribute="bottom" constant="8" id="pJK-7I-rwk"/>
+                            <constraint firstItem="Ga6-JT-jMF" firstAttribute="top" secondItem="y6A-Dv-Onx" secondAttribute="bottom" constant="8" id="rOZ-81-Ua2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fvh-j3-RPj" secondAttribute="trailing" constant="48" id="uYC-Ie-JDr"/>
+                            <constraint firstItem="IHK-M6-muT" firstAttribute="leading" secondItem="9MI-8E-OOA" secondAttribute="leading" id="yNz-75-Wqn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Av-nS-pMa"/>
+                    <connections>
+                        <outlet property="userNameTextField" destination="Fvh-j3-RPj" id="tUA-YT-fTE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="76.911544227886068"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="G0e-6K-Fkh">
+            <objects>
+                <viewController id="nJY-zr-JI9" customClass="GameViewController" customModule="CrossRoadGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rz9-Wc-0fD" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwq-oe-mER">
+                                <rect key="frame" x="249" y="44" width="110" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lyL-Nb-wA0"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T4e-2Q-ce8"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="fwq-oe-mER" id="DYp-sZ-OKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7i-9h-KdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="-347.67616191904051"/>
+        </scene>
+        <!--High Score Table View Controller-->
+        <scene sceneID="643-Wx-XPv">
+            <objects>
+                <tableViewController id="Dwi-Vi-Dn1" customClass="HighScoreTableViewController" customModule="CrossRoadGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="mxq-ed-y7h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="highScoreDate" rowHeight="120" id="Jc0-sk-u5Q" customClass="HighScoreTableViewCell" customModule="CrossRoadGame" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jc0-sk-u5Q" id="3jj-kM-4qD">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBd-ib-fHy">
+                                            <rect key="frame" x="16" y="74" width="296" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Test Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-3F-HWs">
+                                            <rect key="frame" x="16" y="11" width="296" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="WDe-k8-1d0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qL-NF-Ghb">
+                                            <rect key="frame" x="16" y="42" width="296" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="trailing" secondItem="xBd-ib-fHy" secondAttribute="trailing" id="Cgi-H6-vXu"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="trailing" secondItem="8qL-NF-Ghb" secondAttribute="trailing" id="LlP-e3-gFP"/>
+                                        <constraint firstItem="xBd-ib-fHy" firstAttribute="top" secondItem="ceq-3F-HWs" secondAttribute="bottom" constant="28" id="Nl8-2z-2N6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ceq-3F-HWs" secondAttribute="trailing" constant="47" id="O2S-so-69w"/>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="leading" secondItem="xBd-ib-fHy" secondAttribute="leading" id="Toi-qB-y0K"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="top" secondItem="3jj-kM-4qD" secondAttribute="topMargin" id="Urg-Gn-MJe"/>
+                                        <constraint firstItem="xBd-ib-fHy" firstAttribute="bottom" secondItem="3jj-kM-4qD" secondAttribute="bottomMargin" id="bQ8-ti-MfA"/>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="centerY" secondItem="3jj-kM-4qD" secondAttribute="centerY" id="v4t-KT-247"/>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="top" secondItem="3jj-kM-4qD" secondAttribute="topMargin" constant="31" id="wBI-qn-9yF"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="leading" secondItem="8qL-NF-Ghb" secondAttribute="leading" id="wVV-i9-UaS"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="leading" secondItem="3jj-kM-4qD" secondAttribute="leadingMargin" id="xcB-kd-rtF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <connections>
+                                    <outlet property="date" destination="xBd-ib-fHy" id="Ny7-jZ-Miu"/>
+                                    <outlet property="name" destination="ceq-3F-HWs" id="k8o-ZZ-On3"/>
+                                    <outlet property="score" destination="8qL-NF-Ghb" id="1Bl-Sx-oUR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dwi-Vi-Dn1" id="onM-cr-G7Y"/>
+                            <outlet property="delegate" destination="Dwi-Vi-Dn1" id="EWu-rw-x4Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="m1K-u4-8fh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgV-QH-0V4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="438.53073463268368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MdI-6y-aSf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TDB-MC-RIX">
+            <objects>
+                <navigationController id="MdI-6y-aSf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x25-oj-g1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XuO-iL-U5r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnW-kO-jOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="77"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrossRoadGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGm-3k-qp2">
+                                <rect key="frame" x="126" y="341" width="123" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="shC-Qh-lA8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOH-B9-DZy"/>
+                                    <segue destination="nJY-zr-JI9" kind="show" id="SLJ-Lx-EB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujq-Lp-ptM">
+                                <rect key="frame" x="126" y="389" width="123" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1YF-OY-Jng"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="High Scores"/>
+                                <connections>
+                                    <action selector="highScoresButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vg0-fL-9Dj"/>
+                                    <segue destination="Dwi-Vi-Dn1" kind="show" id="vuW-qd-uSC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0F-1T-3Mz">
+                                <rect key="frame" x="45" y="474" width="74" height="34"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="EWt-q4-ElE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-j3-RPj">
+                                <rect key="frame" x="127" y="474" width="198" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try to safely cross the roads. " textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-Dv-Onx">
+                                <rect key="frame" x="16" y="161" width="343" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More roads will appear as you continue." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-JT-jMF">
+                                <rect key="frame" x="16" y="189" width="343" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Every time you step you get +10 points. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8H-S0-CSH">
+                                <rect key="frame" x="16" y="217" width="343" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try to get on the high score leaderboard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MI-8E-OOA">
+                                <rect key="frame" x="16" y="245" width="343" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team Auburn CrossRoad Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBZ-aZ-WRF">
+                                <rect key="frame" x="16" y="65" width="343" height="51"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="SbD-mZ-X1E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1dL-JZ-V69"/>
+                            <constraint firstItem="Fvh-j3-RPj" firstAttribute="leading" secondItem="y0F-1T-3Mz" secondAttribute="trailing" constant="8" id="2hI-ar-rhA"/>
+                            <constraint firstItem="y0F-1T-3Mz" firstAttribute="top" secondItem="Fvh-j3-RPj" secondAttribute="top" id="8sC-pe-8bh"/>
+                            <constraint firstItem="ujq-Lp-ptM" firstAttribute="top" secondItem="EGm-3k-qp2" secondAttribute="bottom" constant="19" id="GlY-bv-me2"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IG2-nu-SNu"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="leading" secondItem="ujq-Lp-ptM" secondAttribute="leading" id="Iag-d3-M3b"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="NJ5-DD-eVm"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="NrS-f6-jdV"/>
+                            <constraint firstItem="y0F-1T-3Mz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="RVX-oe-iyy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fvh-j3-RPj" secondAttribute="trailing" constant="50" id="gsH-04-TYu"/>
+                            <constraint firstItem="EGm-3k-qp2" firstAttribute="trailing" secondItem="ujq-Lp-ptM" secondAttribute="trailing" id="nPh-15-pCN"/>
+                            <constraint firstItem="Fvh-j3-RPj" firstAttribute="top" secondItem="ujq-Lp-ptM" secondAttribute="bottom" constant="76" id="qmx-xZ-aZ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y0F-1T-3Mz" secondAttribute="bottom" constant="159" id="rbt-xT-2Qa"/>
+                            <constraint firstItem="y0F-1T-3Mz" firstAttribute="bottom" secondItem="Fvh-j3-RPj" secondAttribute="bottom" id="wgj-Sa-OcB"/>
+                            <constraint firstItem="JBZ-aZ-WRF" firstAttribute="centerX" secondItem="EGm-3k-qp2" secondAttribute="centerX" id="ygy-R2-aAA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Av-nS-pMa"/>
+                    <connections>
+                        <outlet property="userNameTextField" destination="Fvh-j3-RPj" id="tUA-YT-fTE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="76.911544227886068"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="G0e-6K-Fkh">
+            <objects>
+                <viewController id="nJY-zr-JI9" customClass="GameViewController" customModule="CrossRoadGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rz9-Wc-0fD" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lyL-Nb-wA0"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T4e-2Q-ce8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7i-9h-KdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="-347.67616191904051"/>
+        </scene>
+        <!--High Score Table View Controller-->
+        <scene sceneID="643-Wx-XPv">
+            <objects>
+                <tableViewController id="Dwi-Vi-Dn1" customClass="HighScoreTableViewController" customModule="CrossRoadGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="mxq-ed-y7h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="highScoreDate" rowHeight="120" id="Jc0-sk-u5Q" customClass="HighScoreTableViewCell" customModule="CrossRoadGame" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jc0-sk-u5Q" id="3jj-kM-4qD">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBd-ib-fHy">
+                                            <rect key="frame" x="16" y="74" width="296" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Test Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-3F-HWs">
+                                            <rect key="frame" x="16" y="11" width="296" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="WDe-k8-1d0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qL-NF-Ghb">
+                                            <rect key="frame" x="16" y="42" width="296" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="trailing" secondItem="xBd-ib-fHy" secondAttribute="trailing" id="Cgi-H6-vXu"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="trailing" secondItem="8qL-NF-Ghb" secondAttribute="trailing" id="LlP-e3-gFP"/>
+                                        <constraint firstItem="xBd-ib-fHy" firstAttribute="top" secondItem="ceq-3F-HWs" secondAttribute="bottom" constant="28" id="Nl8-2z-2N6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ceq-3F-HWs" secondAttribute="trailing" constant="47" id="O2S-so-69w"/>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="leading" secondItem="xBd-ib-fHy" secondAttribute="leading" id="Toi-qB-y0K"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="top" secondItem="3jj-kM-4qD" secondAttribute="topMargin" id="Urg-Gn-MJe"/>
+                                        <constraint firstItem="xBd-ib-fHy" firstAttribute="bottom" secondItem="3jj-kM-4qD" secondAttribute="bottomMargin" id="bQ8-ti-MfA"/>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="centerY" secondItem="3jj-kM-4qD" secondAttribute="centerY" id="v4t-KT-247"/>
+                                        <constraint firstItem="8qL-NF-Ghb" firstAttribute="top" secondItem="3jj-kM-4qD" secondAttribute="topMargin" constant="31" id="wBI-qn-9yF"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="leading" secondItem="8qL-NF-Ghb" secondAttribute="leading" id="wVV-i9-UaS"/>
+                                        <constraint firstItem="ceq-3F-HWs" firstAttribute="leading" secondItem="3jj-kM-4qD" secondAttribute="leadingMargin" id="xcB-kd-rtF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <connections>
+                                    <outlet property="date" destination="xBd-ib-fHy" id="Ny7-jZ-Miu"/>
+                                    <outlet property="name" destination="ceq-3F-HWs" id="k8o-ZZ-On3"/>
+                                    <outlet property="score" destination="8qL-NF-Ghb" id="1Bl-Sx-oUR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dwi-Vi-Dn1" id="onM-cr-G7Y"/>
+                            <outlet property="delegate" destination="Dwi-Vi-Dn1" id="EWu-rw-x4Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="m1K-u4-8fh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgV-QH-0V4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="438.53073463268368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
